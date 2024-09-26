@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""Module for the rain function
+"""
+
 def rain(walls):
   """Function to find the maximum rain collected
     by a series of walls
