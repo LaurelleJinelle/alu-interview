@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""Module for the rain function
+""" 
 """
 This module provides a function to calculate the amount of rainwater trapped
 between walls after it rains. The walls are represented by non-negative integers
