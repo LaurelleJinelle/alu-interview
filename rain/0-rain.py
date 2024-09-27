@@ -40,7 +40,8 @@ def rain(walls):
             stores the highest wall to the right of or at index i.
         - For each index i,
             calculate the water trapped as the difference between
-          the minimum of left_max[i] and right_max[i], and the height of walls[i].
+          the minimum of left_max[i] and right_max[i],
+          and the height of walls[i].
         - Accumulate the total water trapped at each index.
 
     Time Complexity: O(n), where n is the length of the input list.
@@ -52,7 +53,8 @@ def rain(walls):
         6
 
         Explanation:
-        - Water is trapped between the walls at various points, leading to a total of 6 units of water.
+        - Water is trapped between the walls at various points,
+        leading to a total of 6 units of water.
     """
 
     if not walls or len(walls) < 3:
