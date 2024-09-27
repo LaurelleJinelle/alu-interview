@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 """Module for the rain function
-""" 
+"""
 """
 This module provides a function to calculate the amount of rainwater trapped
-between walls after it rains. The walls are represented by non-negative integers
+between walls after it rains.
+The walls are represented by non-negative integers
 where each integer corresponds to the height of a wall of unit width.
 
 Function:
@@ -13,6 +14,7 @@ Example:
     >>> rain([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1])
     6
 """
+
 
 def rain(walls):
     """
@@ -26,8 +28,10 @@ def rain(walls):
         int: The total amount of rainwater trapped (measured in square units).
 
     Assumptions:
-        - If the list is empty or has fewer than 3 walls, no water can be trapped, so return 0.
-        - The ends of the list are not considered walls, so no water is trapped beyond the first and last walls.
+        - If the list is empty or has fewer than 3 walls,
+        no water can be trapped, so return 0.
+        - The ends of the list are not considered walls,
+        so no water is trapped beyond the first and last walls.
 
     Approach:
         - Precompute two arrays: left_max and right_max.
@@ -39,7 +43,7 @@ def rain(walls):
 
     Time Complexity: O(n), where n is the length of the input list.
     Space Complexity: O(n), due to the extra space used for the left_max and right_max arrays.
-
+    
     Example:
         >>> rain([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1])
         6
